@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMulti.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="APPMULTI - MySQL" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="mysql" Margin="20"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Text="Cadastrar Cliente" BackgroundColor="White" FontAttributes="Bold" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked"/>
+            <Button Text="Ver Clientes" BackgroundColor="White" FontAttributes="Bold" x:Name="btnVer" Clicked="btnVer_Clicked"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Text="Sair" BackgroundColor="Red" TextColor="White" FontAttributes="Bold" x:Name="btnSair" Clicked="btnSair_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
